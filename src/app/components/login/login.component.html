@@ -1,0 +1,111 @@
+<!-- Logotipo -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="text-center py-3">
+                Logo
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- Menu de navegación -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav nav-pills ms-auto me-auto my-2">
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="ingreso.html"
+                        >Ingreso</a
+                    >
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Salir</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                />
+                <button class="btn btn-outline-secondary" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Fin menú de navegación -->
+
+<!-- Formulario -->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <form
+                class=""
+                [formGroup]="angForm"
+                (ngSubmit)="postdata(angForm)"
+                autocomplete="off"
+            >
+                <div class="mb-3 form-group">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="usuario"
+                        name="usuario"
+                        formControlName="usuario"
+                        autocomplete="off"
+                        aria-describedby="usuarioHelp"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        formControlName="password"
+                        autocomplete="off"
+                    />
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary mb-3">
+                        Iniciar Sesión
+                    </button>
+                    <div>
+                        <label class="form-check-label" for="exampleCheck1"
+                            >Olvide mi contraseña
+                            <span>¡Recuperala!</span></label
+                        >
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Cierre formulario -->

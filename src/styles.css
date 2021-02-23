@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #232931 !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #2f4e6f !important;
+}
+
+.btn{
+  background-color: #FFD200 !important;
+  color: black
+}
