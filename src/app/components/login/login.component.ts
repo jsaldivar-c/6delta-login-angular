@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
                     this.router.navigate([redirect]);
                 },
                 (error) => {
-                    alert('User name or password is incorrect');
+                    alert('Usuario o password incorrecto');
                 }
             );
     }

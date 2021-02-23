@@ -1,106 +1,75 @@
-<!-- Logotipo -->
+<!-- Inicio -->
 <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-12">
-            <h3 class="text-center py-3">
+            <h3 class="text-center py-5">
                 Logo
             </h3>
         </div>
-    </div>
-</div>
-
-<!-- Menu de navegación -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav nav-pills ms-auto me-auto my-2">
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="registro.html">Registro</a>
-                </li>
-                <li class="nav-item px-3">
-                    <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="ingreso.html"
-                        >Ingreso</a
-                    >
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#">Salir</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                />
-                <button class="btn btn-outline-secondary" type="submit">
-                    Search
-                </button>
-            </form>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="display-6">
+                        ¡Hola! Bienvenido a <span class="fw-bold">6 Delta</span>
+                    </p>
+                    <p class="lead">
+                        Para ingresar es necesario
+                        <span class="fw-bold">iniciar sesión</span>.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
-<!-- Fin menú de navegación -->
+</div>
+<!-- Cierre inicio -->
 
 <!-- Formulario -->
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-11 col-sm-10 col-lg-6">
             <form
-                class=""
+                class="border-0 text-dark font-weight-bold"
                 [formGroup]="angForm"
                 (ngSubmit)="postdata(angForm)"
                 autocomplete="off"
             >
-                <div class="mb-3 form-group">
-                    <label for="usuario" class="form-label">Usuario</label>
+                <div class="mb-3 form-group form-floating">
                     <input
                         type="text"
                         class="form-control"
                         id="usuario"
                         name="usuario"
+                        placeholder="Usuario"
                         formControlName="usuario"
                         autocomplete="off"
                         aria-describedby="usuarioHelp"
                     />
+                    <label for="usuario" class="form-label">Usuario</label>
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
+                <div class="mb-3 form-floating">
                     <input
                         type="password"
                         class="form-control"
                         id="password"
                         name="password"
+                        placeholder="Password"
                         formControlName="password"
                         autocomplete="off"
                     />
+                    <label for="password" class="form-label">Contraseña</label>
                 </div>
-                <div>
-                    <button type="submit" class="btn btn-primary mb-3">
+                <div class="d-grid gap-4 col-11 mx-auto">
+                    <button type="submit" class="btn btn-primary fw-bold">
                         Iniciar Sesión
                     </button>
-                    <div>
-                        <label class="form-check-label" for="exampleCheck1"
+                    <div class="text-center">
+                        <label
+                            class="form-check-label text-light"
+                            for="exampleCheck1"
                             >Olvide mi contraseña
-                            <span>¡Recuperala!</span></label
+                            <span class="badge bg-info text-dark"
+                                >¡Recuperala!</span
+                            ></label
                         >
                     </div>
                 </div>

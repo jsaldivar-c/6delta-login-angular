@@ -1,0 +1,70 @@
+<!-- Menu de navegación -->
+<nav class="navbar flex-column navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+        <button type="button" class="btn btn-transparent">
+            <i class="far fa-bell fa-1x"></i>
+            <span class="badge bg-danger">9</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav nav-pills ms-auto me-auto my-2">
+                <li class="nav-item px-3 bg-warning">
+                    <a class="nav-link text-dark fw-bold" href="#"
+                        ><i class="text-dark fas fa-user-circle"></i> Nombre de
+                        usuario
+                    </a>
+                </li>
+                <li
+                    class="nav-item px-3"
+                    *ngFor="let menu of menus"
+                    routerLinkActive="active"
+                >
+                    <a class="nav-link" [routerLink]="'' + menu.link"
+                        ><i
+                            class=" color-dark me-2 {{menu.icon}}"
+                            aria-hidden="true"
+                        ></i
+                        >{{menu.nombre_menu}}</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fin menú de navegación -->
+<!-- Tarjetas -->
+<div class="container-fluid">
+    <div class="row justify-content-center" *ngFor="let menu of menus">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+            <a class="nav-link" [routerLink]="'' + menu.link">
+                <div class="card text-dark bg-warning mb-3 p-3">
+                    <div class="row g-0">
+                        <div class="col-4 col-md-4">
+                            <i
+                                class="p-1 text-dark {{menu.icon}} fa-5x"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                        <div class="col-8 col-md-8">
+                            <div class="card-body">
+                                <h6 class="card-title">{{menu.nombre_menu}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Cierre Tarjetas -->

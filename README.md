@@ -1,27 +1,35 @@
-# Login
+# Login 6 Delta | Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) _**version 10.0.7.**_
 
-## Development server
+<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Login
 
-## Code scaffolding
+![Login | Angular](https://res.cloudinary.com/dlbfrbl8h/image/upload/v1614101824/GitHub/login_arwl5j.png "Login | Angular")
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Menú
 
-## Build
+![Login | Angular](https://res.cloudinary.com/dlbfrbl8h/image/upload/v1614101824/GitHub/menu_izoizg.png "Login | Angular")
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Base de datos
 
-## Running unit tests
+![Login | Angular](https://res.cloudinary.com/dlbfrbl8h/image/upload/v1614101825/GitHub/bd_hme4hw.png "Login | Angular")
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### **Tecnologías | Lenguajes de Programación | Herramientas | Frameworks | Librerias**
 
-## Running end-to-end tests
+<br>
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> -   Framework **Angular 10.0.7**
+> -   Framework **Bootstrap 5**
+> -   TypeScript
+> -   PHP 7
+> -   PHP My Admin
 
-## Further help
+<br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Autor
+
+<br>
+
+Realización de la practica: _**José Saldivar**_

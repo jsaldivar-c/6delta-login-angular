@@ -9,6 +9,8 @@ import { Usuario } from '../models/usuarios.model';
 export class LoginService {
     redirectUrl: string;
     baseUrl = 'http://localhost:8888/6delta/api3';
+    baseUrl2 = 'http://localhost:8888/6delta/api2';
+
     @Output() getLoggedInName: EventEmitter<any> = new EventEmitter();
     constructor(private http: HttpClient) {}
 
@@ -27,5 +29,9 @@ export class LoginService {
 
     setToken(token: string) {
         localStorage.setItem('token', token);
+    }
+
+    getMenus() {
+        return this.http.get(`${this.baseUrl2}/read-menu.php`);
     }
 }
